@@ -19,6 +19,7 @@ The three files that needs to be downloaded are -
 - [coco.names](https://github.com/pjreddie/darknet/blob/master/data/coco.names)
 - [yolov3.cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg)
 - [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
+- [shape_predictor_68_face_landmarks.dat](https://huggingface.co/spaces/asdasdasdasd/Face-forgery-detection/blob/ccfc24642e0210d4d885bc7b3dbc9a68ed948ad6/shape_predictor_68_face_landmarks.dat)
 
 Download these files and save it inside a folder. Name the folder anything you wish, but I have named it as **yolo-coco** just because of the fact that we are going to use the coco dataset objects.
 
