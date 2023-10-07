@@ -16,7 +16,7 @@ configPath = 'yolo-coco/yolov3.cfg'
 net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 
 # Initialize the video capture from the default camera (0)
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 while True:
     ret, image = cap.read()  # Read a frame from the webcam feed
