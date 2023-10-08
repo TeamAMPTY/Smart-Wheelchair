@@ -45,7 +45,7 @@ while True:
         # Otherwise, detect head orientation based on nose position relative to eyes
         else:
             nose_x = landmarks[30][0]
-            left_eye_x = landmarks[36][0]
+            left_eye_x = landmarks[38][0]
             right_eye_x = landmarks[42][0]
 
             if nose_x < left_eye_x:
