@@ -1,5 +1,10 @@
 import numpy as np
 import cv2
+import pyttsx3
+
+#Load Sound Engine
+engine = pyttsx3.init()
+engine.setProperty("rate",120)
 
 # Load COCO class labels
 labelsPath = 'yolo-coco/coco.names'
@@ -16,7 +21,7 @@ configPath = 'yolo-coco/yolov3.cfg'
 net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 
 # Initialize the video capture from the default camera (0)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 while True:
     ret, image = cap.read()  # Read a frame from the webcam feed
@@ -68,8 +73,12 @@ while True:
             (w, h) = (boxes[i][2], boxes[i][3])
             color = [int(c) for c in COLORS[classIDs[i]]]
             cv2.rectangle(image, (x, y), (x + w, y + h), color, 2)
-            text = "{}: {:.4f}".format(LABELS[classIDs[i]], confidences[i])
-            cv2.putText(image, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+            # text = "{}: {:.4f}".format(LABELS[classIDs[i]], confidences[i])
+            text = "{}".format(LABELS[classIDs[i]], confidences[i])
+            sound = f"There is a {text} ahead."
+            # cv2.putText(image, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+            engine.say(sound)
+            engine.runAndWait()
 
     # Display the output frame
     cv2.imshow("Webcam Feed", image)

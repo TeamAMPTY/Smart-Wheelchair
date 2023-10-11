@@ -49,6 +49,7 @@ while True:
             right_eye_x = landmarks[42][0]
 
             if nose_x < left_eye_x:
+                
                 movement = "Left"
             elif nose_x > right_eye_x:
                 movement = "Right"
