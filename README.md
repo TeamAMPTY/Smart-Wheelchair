@@ -20,9 +20,9 @@ Object Detection with YOLO: The YOLO (You Only Look Once) model is employed for 
 - openCV
 ### Installation
 Clone the repository:
-```bash git clone https://github.com/TeamAMPTY/Smart-Wheelchair/tree/master ```
-### Install dependencies: 
-```bash pip install -r requirements.txt ```
+```git clone https://github.com/TeamAMPTY/Smart-Wheelchair/tree/master ```
+### Install dependencies:
+```pip install -r requirements.txt ```
 ### Usage
 1- Configure the necessary settings in config.yaml.
 2- Run the main application: python smifty.py
