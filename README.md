@@ -2,6 +2,11 @@
 
 SMIFTY is a smart wheelchair designed to enhance user mobility, safety, and convenience through the integration of computer vision and advanced safety features. This project leverages YOLO-based object detection for navigating the wheelchair, ensuring obstacle avoidance and promoting a secure user experience.
 
+## Project Images
+
+![WhatsApp Image 2023-10-11 at 3 22 31 PM](https://github.com/TeamAMPTY/Smart-Wheelchair/assets/92146582/5fb0ac9a-4d7d-40aa-a65a-b47ac8c03f61)
+
+
 ## Features
 Computer Vision Navigation: SMIFTY utilizes computer vision to navigate and intelligently move around obstacles, providing an enhanced level of autonomy for the user.
 
