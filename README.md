@@ -1,52 +1,36 @@
-# Object Detection on images using YOLO
+# SMIFTY: Smart Wheelchair with Computer Vision and Object Detection
 
-**YOLO (You Only Look Once)** is a very powerful and a fast algorithm in object detection. A strong understanding of the algorithm is essential before we start to code.
+SMIFTY is a smart wheelchair designed to enhance user mobility, safety, and convenience through the integration of computer vision and advanced safety features. This project leverages YOLO-based object detection for navigating the wheelchair, ensuring obstacle avoidance and promoting a secure user experience.
 
-**Some important papers to start with -**
+## Features
+Computer Vision Navigation: SMIFTY utilizes computer vision to navigate and intelligently move around obstacles, providing an enhanced level of autonomy for the user.
 
-There are three papers you need to go through *(Maybe difficult to understand initially, but worth reading it)*
+Object Detection with YOLO: The YOLO (You Only Look Once) model is employed for real-time object detection, allowing SMIFTY to identify and respond to various objects in its environment.
 
-- [You Only Look Once: Unified, Real-Time Object Detection](https://pjreddie.com/media/files/papers/yolo.pdf)
-- [YOLO9000: Better, Faster, Stronger](https://pjreddie.com/media/files/papers/YOLO9000.pdf)
-- [YOLOv3: An Incremental Improvement](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
+## Safety Features:
 
-We are going to use YOLO v3 for our coding purpose in this repository.
+- Safety Belt: A built-in safety belt ensures the user remains securely seated during operation.
+- Kill Switch: An emergency kill switch instantly halts the wheelchair's movement in critical situations.
+- Fall Detection: SMIFTY is equipped with a fall detection mechanism to automatically trigger safety protocols if the user falls.
+- User-Friendly Interface: The wheelchair is designed with an intuitive user interface, making it accessible for users of all abilities.
 
-*Before going to code, we need to download some important YOLO files. It's the folder that's present in this repository as yolo-coco*
+## Getting Started
+### Prerequisites
+- Python
+- openCV
+### Installation
+Clone the repository:
+```bash git clone https://github.com/TeamAMPTY/Smart-Wheelchair/tree/master ```
+### Install dependencies: 
+```bash pip install -r requirements.txt ```
+### Usage
+1- Configure the necessary settings in config.yaml.
+2- Run the main application: python smifty.py
+### Contributing
+We welcome contributions! If you'd like to contribute to SMIFTY, please follow our Contribution Guidelines.
 
-The three files that needs to be downloaded are -
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- [coco.names](https://github.com/pjreddie/darknet/blob/master/data/coco.names)
-- [yolov3.cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg)
-- [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
-- [shape_predictor_68_face_landmarks.dat](https://huggingface.co/spaces/asdasdasdasd/Face-forgery-detection/blob/ccfc24642e0210d4d885bc7b3dbc9a68ed948ad6/shape_predictor_68_face_landmarks.dat)
-
-Download these files and save it inside a folder. Name the folder anything you wish, but I have named it as **yolo-coco** just because of the fact that we are going to use the coco dataset objects.
-
-Create a folder **images** and have some pictures inside it to test the object detection.
-
-The **yolo.py** has the script to detect the objects in the images.
-
-Make sure you have numpy and opencv installed. If not install them using pip
-
-```
-pip install numpy
-pip install opencv-python
-```
-
-I am using the ***numpy*** version ***1.17.4*** and ***opencv*** version ***3.4.2***
-
-You can now run the file by giving this command on your command promt
-
-```
-python yolo.py --image images/ipl.jpeg
-```
-
-You can use any image you want after the `--image` argument. Make sure you give the right path.
-
-Press **q** to quit the window of the image showing object detection
-
-Feel free to star ⭐ this repo if you find this useful and visit my [YouTube](https://www.youtube.com/channel/UCaOiKrS-R1Nuya0pxjQ68fA) channel if you have time.
-
-Thanks!
-
+## Contact
+For inquiries, issues, or collaborations, please contact Team AMPTY at teamAMPTY@gmail.com.
